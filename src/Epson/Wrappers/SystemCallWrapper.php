@@ -87,7 +87,9 @@ class SystemCallWrapper
 	 */
 	public function close()
 	{
-		fclose($this->resource);
+        if (is_resource($this->resource)) {
+            fclose($this->resource);
+        }
 	}
 
 	public function hasError()
