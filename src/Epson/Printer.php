@@ -39,7 +39,7 @@ class Printer
      */
     protected $device;
 
-    public function __construct(Device $device = null)
+    public function __construct(?Device $device = null)
     {
         $this->device = ($device == null) ? new FileSystem() : $device;
 

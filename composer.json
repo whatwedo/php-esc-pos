@@ -21,7 +21,7 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.0",
+        "php": ">=8.1.0",
         "hyperthese/php-serial": "dev-master",
         "intervention/image": "dev-main"
     },
